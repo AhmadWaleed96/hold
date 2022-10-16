@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 400px;
+    background-image: url(../image/WhatsApp\ Image\ 2022-10-16\ at\ 11.20.22\ AM.jpeg);
+    background-color: black;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+i {
+    color: inherit !important;
+}
+
+:root {
+    --browncolor--: #A2852E;
+    --lightbrowncolor--: #F1EDE0;
+    --greycolor--: #999BA1;
+}
+
+.checked {
+    color: #FEB108;
+}
+
+
+/* end global */
+
+section h3 {
+    color: var(--browncolor--);
+}
+
+section h6 {
+    color: var(--greycolor--);
+}
+
+.card-title,
+.card-text {
+    color: var(--browncolor--);
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.card-body {
+    background-color: var(--lightbrowncolor--);
+}
+
+.sectionHead {
+    background-color: var(--lightbrowncolor--);
+}
+
+
+/* start footer */
+
+footer {
+    background-color: var(--lightbrowncolor--);
+}
+
+footer .aboutus {
+    color: var(--browncolor--);
+}
+
+footer .btn {
+    background-color: var(--browncolor--);
+}
+
+footer div ul li a {
+    color: var(--browncolor--);
+    font-weight: 600;
+    font-size: small;
+}
+
+footer .footer {
+    background-color: var(--browncolor--);
+}
+
+
+/* end footer */
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex
+}
+
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%)
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%)
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0)
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: none;
+    background-color: transparent;
+}
+
+.social {
+    color: var(--browncolor--);
+    background-color: white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social:hover {
+    color: #e1bd53;
+}
+
+a:hover {
+    color: #e1bd53 !important;
+}
+
+.btn22 {
+    background-color: var(--browncolor--) !important;
+    color: white;
+}
+
+.btn22:hover {
+    background-color: #e1bd53;
+    color: white;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: rgb(33, 33, 33) !important;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+}
